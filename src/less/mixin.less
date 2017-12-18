@@ -316,7 +316,6 @@
 }
 
 .weui-vcell{
-  padding: 10px 15px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -340,8 +339,12 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   overflow: hidden;
   padding-left: .5em;
-
 }
+.weui-input-border input{
+  position: relative;
+  z-index: 11;
+}
+
 .weui-input-border:after{
   content: " ";
   width: 200%;
@@ -355,7 +358,8 @@
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   box-sizing: border-box;
-z-index: -10;background-color: #FFF;
+  z-index: -10;
+  background-color: #FFF;
 }
 
 .weui-vbuttom{
