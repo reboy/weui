@@ -1,0 +1,44 @@
+.openlist{
+  position: relative;
+  width: 100%;
+  ul{
+    li{
+      position: relative;
+      width: 100%;
+      div{
+        position: relative;
+        font-size: 0.75rem;
+        width: 100%;
+        padding: .5rem 0;
+        .iconfont{
+          position: relative;
+          float: right;
+          color: @color-text-gray;
+        }
+      }
+      .open_on{
+        color: #e53838;
+      }
+      p{
+        display: none;
+        padding-bottom: .5rem;
+        font-size: .7rem;
+        color: #6f6f6f;
+      }
+    }
+    li:after{
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      border-bottom: 1px solid #ccc;
+      color: #ccc;
+      -webkit-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+      -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+    }
+  }
+}
