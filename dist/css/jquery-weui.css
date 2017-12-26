@@ -2515,7 +2515,7 @@ button.swiper-pagination-bullet {
 }
 .articlelist img {
   display: block;
-  width: 106.66666667px;
+  width: 105.26315789px;
 }
 .articlelist .content {
   -webkit-box-flex: 1;
@@ -2556,4 +2556,7 @@ button.swiper-pagination-bullet {
   transform-origin: 0 100%;
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
+}
+.articlelist:last-child:after {
+  display: none;
 }
