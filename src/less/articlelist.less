@@ -6,7 +6,7 @@
   position: relative;
   img{
     display: block;
-    width: 5*@font;
+    width: @imgwidth;
   }
   .content{
     -webkit-box-flex: 1;
@@ -48,4 +48,8 @@
   transform-origin: 0 100%;
   -webkit-transform: scaleY(.5);
   transform: scaleY(.5);
+}
+
+.articlelist:last-child:after{
+  display: none;
 }

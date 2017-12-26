@@ -22,7 +22,8 @@ body {
 
 .loop(@i: 1) when (@i <= length(@bps)) {  //注意less数组是从1开始的
   @bp: extract(@bps, @i);
-  @font: @bp/@baseWidth*@baseFont;  
+  @font: @bp/@baseWidth*@baseFont;
+  @imgwidth: @bp/3.8;
   @media only screen and (min-width: @bp){
     html {
       font-size: @font !important;
