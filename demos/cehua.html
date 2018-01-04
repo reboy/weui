@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>侧滑栏</title>
+    <% include _head.html %>
+  </head>
+
+  <body ontouchstart>
+
+   <div class="side_ctrl">
+     <a href="javascript:">展开侧边栏</a>
+   </div>
+
+   <div class="carside">
+     wewe
+   </div>
+   <div class="carsideshadow">
+
+   </div>
+  <style>
+    .carside{
+      width: 0px;
+      position: fixed;
+      right: 0;
+      top:0;
+      bottom: 0;
+      background-color: #FFF;
+      height: 100%;
+      z-index: 500;
+    }
+    .carsideshadow{
+      position: fixed;
+      left:0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background-color: #000;
+      z-index: 400;
+      display: none;
+    }
+  </style>
+   <% include _foot.html %>
+  </body>
+
+</html>
