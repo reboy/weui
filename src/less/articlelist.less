@@ -4,15 +4,19 @@
   display: flex;
   padding: .8rem .6rem;
   position: relative;
+  .pic{
+    padding-right:.6rem;
+  }
   img{
     display: block;
     width: @imgwidth;
+
   }
   .content{
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
-    padding-left:.6rem;
+
     position: relative;
     overflow: hidden;
   }
@@ -22,6 +26,11 @@
     overflow: hidden; white-space: nowrap;
     text-overflow:ellipsis;
     display: block;
+    color: @color-text;
+  }
+  .btitle{
+    font-size:.7rem;
+    padding-bottom: .4rem;
     color: @color-text;
   }
   p{
@@ -53,3 +62,68 @@
 .articlelist:last-child:after{
   display: none;
 }
+
+
+
+
+.s_articlelist{
+  background-color: #FFF;
+  .title{
+    background-color: #eee;
+    padding: 5px 15px;
+    font-size: .7rem;
+  }
+  .list{
+    padding:0 12px;
+    overflow: hidden;
+  }
+  li{
+    display:block;
+    padding: 12px 0;
+    position: relative;
+  }
+  li:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    z-index: 2;
+  }
+  li:last-child:after{
+    display: none;
+  }
+  a{
+    display:block;
+  }
+  .pic img{
+    display: block;
+    margin-right: 10px;
+  }
+  .list_item{
+    display: flex;
+    align-items:center;
+  }
+  .content{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    color: @color-text;
+    p{
+      font-size: .7rem;
+    }
+    del{
+      font-size: .65rem;
+      color: @color-primary;
+    }
+  }
+}
+

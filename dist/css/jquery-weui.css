@@ -2497,7 +2497,7 @@ button.swiper-pagination-bullet {
 }
 .cardlist p {
   font-size: .6rem;
-  color: #cfcfcf;
+  color: #9b9b9b;
 }
 .cardlist .logo {
   text-align: right;
@@ -2513,6 +2513,9 @@ button.swiper-pagination-bullet {
   padding: .8rem .6rem;
   position: relative;
 }
+.articlelist .pic {
+  padding-right: .6rem;
+}
 .articlelist img {
   display: block;
   width: 105.26315789px;
@@ -2521,7 +2524,6 @@ button.swiper-pagination-bullet {
   -webkit-box-flex: 1;
   -ms-flex: 1;
       flex: 1;
-  padding-left: .6rem;
   position: relative;
   overflow: hidden;
 }
@@ -2532,6 +2534,11 @@ button.swiper-pagination-bullet {
   white-space: nowrap;
   text-overflow: ellipsis;
   display: block;
+  color: #3d4145;
+}
+.articlelist .btitle {
+  font-size: .7rem;
+  padding-bottom: .4rem;
   color: #3d4145;
 }
 .articlelist p {
@@ -2559,4 +2566,68 @@ button.swiper-pagination-bullet {
 }
 .articlelist:last-child:after {
   display: none;
+}
+.s_articlelist {
+  background-color: #FFF;
+}
+.s_articlelist .title {
+  background-color: #eee;
+  padding: 5px 15px;
+  font-size: .7rem;
+}
+.s_articlelist .list {
+  padding: 0 12px;
+  overflow: hidden;
+}
+.s_articlelist li {
+  display: block;
+  padding: 12px 0;
+  position: relative;
+}
+.s_articlelist li:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  z-index: 2;
+}
+.s_articlelist li:last-child:after {
+  display: none;
+}
+.s_articlelist a {
+  display: block;
+}
+.s_articlelist .pic img {
+  display: block;
+  margin-right: 10px;
+}
+.s_articlelist .list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.s_articlelist .content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden;
+  color: #3d4145;
+}
+.s_articlelist .content p {
+  font-size: .7rem;
+}
+.s_articlelist .content del {
+  font-size: .65rem;
+  color: #e53838;
 }
