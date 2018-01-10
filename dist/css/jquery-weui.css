@@ -76,6 +76,28 @@
   -ms-flex-align: center;
       align-items: center;
 }
+.weui-vcell .weui-cell__hd {
+  line-height: 2.55555556;
+  padding-right: .5em;
+  padding-left: .5em;
+  font-size: 17px;
+  background-color: #f7f7f7;
+}
+.weui-vcell .weui-cell__hd:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 0px;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+}
 .weui-input-border {
   position: relative;
   display: block;
