@@ -917,6 +917,9 @@ body {
 .weui-navbar + .weui-tab__bd {
   padding-top: 50px;
 }
+.weui-navbar {
+  z-index: 6;
+}
 .toolbar {
   position: relative;
   width: 100%;
