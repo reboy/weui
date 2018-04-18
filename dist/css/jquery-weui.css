@@ -917,6 +917,9 @@ body {
 .weui-navbar + .weui-tab__bd {
   padding-top: 50px;
 }
+.weui-navbar {
+  z-index: 6;
+}
 .toolbar {
   position: relative;
   width: 100%;
@@ -2343,33 +2346,12 @@ button.swiper-pagination-bullet {
   line-height: 2.2rem;
   color: #3d4145;
   background: #f0f0f0;
-}
-.topbar:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: auto;
-  right: auto;
-  height: 1px;
-  width: 100%;
-  background-color: #d9d9d9;
-  display: block;
-  z-index: 15;
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .topbar:before {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 3) {
-  .topbar:before {
-    -webkit-transform: scaleY(0.33);
-            transform: scaleY(0.33);
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .topbar .topbar-inner {
   height: 2.2rem;
@@ -2379,8 +2361,6 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 .topbar .title {
-  position: absolute;
-  display: block;
   width: 100%;
   padding: 0;
   font-size: .8rem;
@@ -2391,7 +2371,6 @@ button.swiper-pagination-bullet {
   white-space: nowrap;
 }
 .topbar .picker-button {
-  position: absolute;
   box-sizing: border-box;
   height: 2.2rem;
   line-height: 2.2rem;
@@ -2399,11 +2378,15 @@ button.swiper-pagination-bullet {
   z-index: 1;
   padding: 0 .5rem;
 }
-.topbar .r {
-  right: 0;
+.topbar .logo {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 2.2rem;
+  padding: 0.5rem;
 }
-.topbar .l {
-  left: 0;
+.topbar .logo img {
+  display: block;
+  height: 1.2rem;
 }
 .weui-sec {
   background-color: #fff;
@@ -2653,6 +2636,7 @@ button.swiper-pagination-bullet {
   font-size: .65rem;
   color: #e53838;
 }
+<<<<<<< HEAD
 .menus {
   width: 100%;
   height: 50px;
@@ -2683,4 +2667,30 @@ button.swiper-pagination-bullet {
   line-height: 50px;
   background-color: #EE5757;
   text-align: center;
+=======
+.textnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e53838;
+  overflow: hidden;
+  list-style: none;
+  height: 2.2rem;
+  line-height: 2.2rem;
+}
+.textnav ul li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+      flex: 1;
+  text-align: center;
+  font-size: .7rem;
+}
+.textnav ul li a {
+  color: #FFF;
+  display: block;
+}
+.textnav ul li a:active,
+.textnav ul li a:hover {
+  background-color: #aa292d;
+>>>>>>> d1d04365c8c52d92857e5590522ab0ed4c4a7be6
 }
