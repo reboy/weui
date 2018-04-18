@@ -7,15 +7,15 @@
         menus[i].onclick = function () {
             arr[i] = 0;
             $(this).next().slideDown(300);
-            $(".mask").show();
+            $(".mask").fadeIn(400);
         };
         $(".mask").click(function () {
             // alert(menus[c]);
-            $(".mask").hide();
+            $(".mask").fadeOut(400);
             $(".list").slideUp(300);
         });
         document.addEventListener("touchmove", function () {
-            $(".mask").hide();
+            $(".mask").fadeOut(400);
             $(".list").slideUp(300);
         });
     }

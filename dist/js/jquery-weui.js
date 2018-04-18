@@ -6541,28 +6541,34 @@ Device/OS Detection
         menus[i].onclick = function () {
             arr[i] = 0;
             $(this).next().slideDown(300);
-            $(".mask").show();
+            $(".mask").fadeIn(400);
         };
         $(".mask").click(function () {
             // alert(menus[c]);
-            $(".mask").hide();
+            $(".mask").fadeOut(400);
             $(".list").slideUp(300);
         });
         document.addEventListener("touchmove", function () {
-            $(".mask").hide();
+            $(".mask").fadeOut(400);
             $(".list").slideUp(300);
         });
     }
 }($);
 /* global $:true */
 +function ($) {
-    function fnZd(elm) {
-        // var elm = $('.fixed-top');
-        var startPos = $(elm).offset().top;
-        $.event.add(window, "scroll", function () {
-            var p = $(window).scrollTop();
-            $(elm).css('position', ((p) > startPos) ? 'fixed' : 'static');
-            $(elm).css('top', ((p) > startPos) ? '0px' : '');
-        });
-    }
+  $.fn.fixedtop = function(npx) {
+    var $this = $(this);
+    var startPos = $this.offset().top;
+    $.event.add(window, "scroll", function () {
+      var p = $(window).scrollTop();
+      if(npx){
+        $this.css("position", (p) > (startPos-npx) ? "fixed" : "static");
+        $this.css("top",npx);
+        $this.css('top', ((p) > startPos-npx) ? npx : '');
+      }else {
+      $this.css("position", (p) > startPos ? "fixed" : "static");
+        $this.css('top', ((p) > startPos) ? '0px' : '');
+      }
+    });
+  };
 }($);

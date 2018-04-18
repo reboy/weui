@@ -2636,19 +2636,13 @@ button.swiper-pagination-bullet {
   font-size: .65rem;
   color: #e53838;
 }
-.menus {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #0BB20C;
-}
 .list {
+  width: 100px;
+  right: 0;
   display: none;
   position: absolute;
-  width: 100%;
+  background-color: #fff;
   z-index: 20;
-  background-color: #ddd;
 }
 .mask {
   width: 100%;

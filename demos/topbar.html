@@ -10,15 +10,17 @@
 <header class='demos-header'>
   <h1 class="demos-title">头部导航</h1>
 </header>
+<div class="fix" style="height: 30px; background-color: #0a8ddf;  width: 100%;">
 
-<div class="topbar" >
+</div>
+<div class="topbar">
   <div class="picker-button">wewe</div>
   <div class="title">wewewe</div>
   <div class="picker-button">wewe</div>
 </div>
 <br/>
-
-<div class="topbar" style="background-color: #0a8ddf">
+<div style="height: 300px"></div>
+<div class="topbar" id="dtop" style="background-color: #0a8ddf">
   <div>
     <div style="display: inline-block;vertical-align: top;">
       <i class="iconfont icon-shouye"></i>
@@ -37,15 +39,25 @@
     <div style="display: inline-block;vertical-align: top;">
       频道名
     </div>
-  <div class="picker-button" style="display: inline-block">城市</div>
+
+    <div class="menus-con" style="display: inline-block;vertical-align: top;">
+      <span class = "menus">点我</span>
+      <div class="list" style=" ">
+        <div>asdas</div>
+      </div>
+      <div class="mask"></div>
+  </div>
+
   </div>
 </div>
 <br/>
-
-
+<div style="height: 1000px"></div>
 
 <br/>
 <% include _foot.html %>
-
+<script>
+  $(".fix").fixedtop();
+  $("#dtop").fixedtop(30);
+</script>
 </body>
 </html>

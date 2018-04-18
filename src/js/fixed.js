@@ -1,12 +1,18 @@
 /* global $:true */
 +function ($) {
-    $(function () {
-        var elm = $('.fixed-top');
-        var startPos = $(elm).offset().top;
-        $.event.add(window, "scroll", function () {
-            var p = $(window).scrollTop();
-            $(elm).css('position', ((p) > startPos) ? 'fixed' : 'static');
-            $(elm).css('top', ((p) > startPos) ? '0px' : '');
-        });
+  $.fn.fixedtop = function(npx) {
+    var $this = $(this);
+    var startPos = $this.offset().top;
+    $.event.add(window, "scroll", function () {
+      var p = $(window).scrollTop();
+      if(npx){
+        $this.css("position", (p) > (startPos-npx) ? "fixed" : "static");
+        $this.css("top",npx);
+        $this.css('top', ((p) > startPos-npx) ? npx : '');
+      }else {
+      $this.css("position", (p) > startPos ? "fixed" : "static");
+        $this.css('top', ((p) > startPos) ? '0px' : '');
+      }
     });
+  };
 }($);
