@@ -2347,33 +2347,6 @@ button.swiper-pagination-bullet {
   color: #3d4145;
   background: #f0f0f0;
 }
-.topbar:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: auto;
-  right: auto;
-  height: 1px;
-  width: 100%;
-  background-color: #d9d9d9;
-  display: block;
-  z-index: 15;
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .topbar:before {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 3) {
-  .topbar:before {
-    -webkit-transform: scaleY(0.33);
-            transform: scaleY(0.33);
-  }
-}
 .topbar .topbar-inner {
   height: 2.2rem;
   display: -webkit-box;
@@ -2401,6 +2374,14 @@ button.swiper-pagination-bullet {
   color: #e53838;
   z-index: 1;
   padding: 0 .5rem;
+}
+.topbar .logo {
+  position: absolute;
+  height: 2.2rem;
+}
+.topbar .logo img {
+  margin: .5rem;
+  height: 1.2rem;
 }
 .topbar .r {
   right: 0;
@@ -2655,4 +2636,29 @@ button.swiper-pagination-bullet {
 .s_articlelist .content del {
   font-size: .65rem;
   color: #e53838;
+}
+.textnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e53838;
+  overflow: hidden;
+  list-style: none;
+  height: 2.2rem;
+  line-height: 2.2rem;
+}
+.textnav ul li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+      flex: 1;
+  text-align: center;
+  font-size: .7rem;
+}
+.textnav ul li a {
+  color: #FFF;
+  display: block;
+}
+.textnav ul li a:active,
+.textnav ul li a:hover {
+  background-color: #aa292d;
 }

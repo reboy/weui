@@ -6,7 +6,9 @@
   </head>
 
   <body ontouchstart>
-
+  <header class='demos-header'>
+    <h1 class="demos-title">默认tab切换</h1>
+  </header>
     <div class="weui-tab">
       <div class="weui-navbar">
         <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
@@ -32,12 +34,64 @@
       </div>
     </div>
 
+
+
+  <header class='demos-header'>
+    <h1 class="demos-title">自定义tab切换</h1>
+  </header>
+<style>
+  .simple .weui-bar__item--on:before{
+    content: "";
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    /*top: -50px;*/
+    bottom: 0;
+    height:1px;
+    border-bottom: 1px solid #eb373f;
+    color: #ccc;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+  .simple .weui-navbar__item{
+    background-color: #FFF;
+  }
+  .simple .weui-navbar__item:after{
+    border-right: 1px solid #fff;
+  }
+  .simple .weui-bar__item--on:after{
+    border-right: 1px solid #fff;
+  }
+</style>
+
+  <div class="weui-tab simple">
+    <div class="weui-navbar">
+      <a class="weui-navbar__item weui-bar__item--on" href="#tab4">
+        选项一
+      </a>
+      <a class="weui-navbar__item" href="#tab5">
+        选项二
+      </a>
+      <a class="weui-navbar__item" href="#tab6">
+        选项三
+      </a>
+    </div>
+    <div class="weui-tab__bd">
+      <div id="tab4" class="weui-tab__bd-item weui-tab__bd-item--active">
+        <h1>页面一</h1>
+      </div>
+      <div id="tab5" class="weui-tab__bd-item">
+        <h1>页面二</h1>
+      </div>
+      <div id="tab6" class="weui-tab__bd-item">
+        <h1>页面三</h1>
+      </div>
+    </div>
+  </div>
     <% include _foot.html %>
-    <script>
-      $("#a").select({
-        title: "选择职业",
-        items: ["法官", "医生", "猎人", "学生", "记者", "其他"]
-      });
-    </script>
+
   </body>
 </html>
