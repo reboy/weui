@@ -24,8 +24,10 @@
 <header class='demos-header'>
   <h1 class="demos-title">头部导航</h1>
 </header>
+<div class="fix" style="height: 30px; background-color: #0a8ddf;  width: 100%; z-index: 101">
 
-<div class="topbar" >
+</div>
+<div class="topbar">
   <div class="picker-button">wewe</div>
   <div class="title">wewewe</div>
   <div class="picker-button">wewe</div>
@@ -51,12 +53,24 @@
     <div style="display: inline-block;vertical-align: top;">
       频道名
     </div>
-  <div class="picker-button" style="display: inline-block">城市</div>
+
+    <div class="menus-con" style="display: inline-block;vertical-align: top;">
+      <div class="menus">
+        <span>点我</span>
+      </div>
+      <div class="list" style="right: 0; width: 100px">
+        <p>第一行</p>
+        <p>第二行</p>
+        <p>第三行</p>
+        <p>第四行</p>
+      </div>
+      <div class="mask"></div>
+  </div>
+
   </div>
 </div>
 <br/>
-
-
+<div style="height: 800px"></div>
 
 <br/>
 <script src="../lib/jquery-2.1.4.js"></script>
@@ -68,6 +82,9 @@
 </script>
 <script src="../js/jquery-weui.js"></script>
 
-
+<script>
+  $(".fix").fixedtop();
+  $(".topbar").fixedtop(300);
+</script>
 </body>
 </html>
