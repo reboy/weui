@@ -2047,8 +2047,8 @@ button.swiper-pagination-bullet {
   transition-duration: .3s;
   height: 100%;
   background: #EFEFF4;
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, -720px, 0);
+          transform: translate3d(0, -720px, 0);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
@@ -2076,8 +2076,8 @@ button.swiper-pagination-bullet {
 }
 .weui-popup__container--visible .weui-popup__modal {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, -600px, 0);
+          transform: translate3d(0, -600px, 0);
 }
 .weui-notification {
   position: fixed;
@@ -2652,4 +2652,35 @@ button.swiper-pagination-bullet {
 .s_articlelist .content del {
   font-size: .65rem;
   color: #e53838;
+}
+.menus {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #0BB20C;
+}
+.list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  background-color: #ddd;
+}
+.mask {
+  width: 100%;
+  height: 800px;
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.fixed-top {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #EE5757;
+  text-align: center;
 }

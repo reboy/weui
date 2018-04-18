@@ -65,8 +65,10 @@ gulp.task('js', function(cb) {
     './src/js/slider.js',
     './src/js/swipeout.js',
     './src/js/openlist.js',
-      './src/js/cehua.js',
-      './src/js/indexlist.js'
+    './src/js/cehua.js',
+    './src/js/indexlist.js',
+    './src/js/dropdown.js',
+    './src/js/fixed.js'
   ])
     .pipe(concat({ path: 'jquery-weui.js'}))
     .pipe(header(banner))

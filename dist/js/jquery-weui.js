@@ -6483,22 +6483,7 @@ Device/OS Detection
 
 }($);
 
-/* global $:true */
-+function($) {
-  "use strict";
-  $(document).on("click",".side_ctrl a", function (e) {
-    if($('.carside').width() <= 0){
-      $('.carside').animate({width: '230px'}, 150);
-      $('.carsideshadow').fadeIn(200);
-    }
-  });
-  $(document).on("click",".carsideshadow", function (e) {
-    if($('.carside').width() > 50){
-      $('.carside').animate({width: '0px'}, 150);
-      $('.carsideshadow').fadeOut(200);
-    }
-  });
-}($);
+
 /* global $:true */
 +function($) {
   "use strict";
@@ -6546,4 +6531,38 @@ Device/OS Detection
     return currentLetterDom ? currentLetterDom.innerText : null;
   }
 
+}($);
+/* global $:true */
++function ($) {
+    var menus = document.getElementsByClassName("menus");
+    var arr = [];
+    for (var i = 0; i < menus.length; i++) {
+        var c = i;
+        menus[i].onclick = function () {
+            arr[i] = 0;
+            $(this).next().slideDown(300);
+            $(".mask").show();
+        };
+        $(".mask").click(function () {
+            // alert(menus[c]);
+            $(".mask").hide();
+            $(".list").slideUp(300);
+        });
+        document.addEventListener("touchmove", function () {
+            $(".mask").hide();
+            $(".list").slideUp(300);
+        });
+    }
+}($);
+/* global $:true */
++function ($) {
+    $(function () {
+        var elm = $('.fixed-top');
+        var startPos = $(elm).offset().top;
+        $.event.add(window, "scroll", function () {
+            var p = $(window).scrollTop();
+            $(elm).css('position', ((p) > startPos) ? 'fixed' : 'static');
+            $(elm).css('top', ((p) > startPos) ? '0px' : '');
+        });
+    });
 }($);
