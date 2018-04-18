@@ -2346,6 +2346,12 @@ button.swiper-pagination-bullet {
   line-height: 2.2rem;
   color: #3d4145;
   background: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .topbar .topbar-inner {
   height: 2.2rem;
@@ -2355,8 +2361,6 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 .topbar .title {
-  position: absolute;
-  display: block;
   width: 100%;
   padding: 0;
   font-size: .8rem;
@@ -2367,7 +2371,6 @@ button.swiper-pagination-bullet {
   white-space: nowrap;
 }
 .topbar .picker-button {
-  position: absolute;
   box-sizing: border-box;
   height: 2.2rem;
   line-height: 2.2rem;
@@ -2376,18 +2379,14 @@ button.swiper-pagination-bullet {
   padding: 0 .5rem;
 }
 .topbar .logo {
-  position: absolute;
+  box-sizing: border-box;
+  display: inline-block;
   height: 2.2rem;
+  padding: 0.5rem;
 }
 .topbar .logo img {
-  margin: .5rem;
+  display: block;
   height: 1.2rem;
-}
-.topbar .r {
-  right: 0;
-}
-.topbar .l {
-  left: 0;
 }
 .weui-sec {
   background-color: #fff;
