@@ -6556,13 +6556,13 @@ Device/OS Detection
 }($);
 /* global $:true */
 +function ($) {
-    $(function () {
-        var elm = $('.fixed-top');
+    function fnZd(elm) {
+        // var elm = $('.fixed-top');
         var startPos = $(elm).offset().top;
         $.event.add(window, "scroll", function () {
             var p = $(window).scrollTop();
             $(elm).css('position', ((p) > startPos) ? 'fixed' : 'static');
             $(elm).css('top', ((p) > startPos) ? '0px' : '');
         });
-    });
+    }
 }($);
