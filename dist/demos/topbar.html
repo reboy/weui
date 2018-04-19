@@ -24,133 +24,20 @@
 <header class='demos-header'>
   <h1 class="demos-title">头部导航</h1>
 </header>
-<<<<<<< HEAD
-<div class="fix" style="height: 30px; background-color: #0a8ddf;  width: 100%;z-index: 20">
-
-</div>
-<div class="topbar" style="clear: both">
-=======
-
-普通头部导航
-<div class="topbar">
->>>>>>> 38f12f09b6ca797941d7c3069f45400bba960450
-  <div class="picker-button">wewe</div>
-  <div class="title">wewewe</div>
-  <div class="picker-button">wewe</div>
-</div>
-<br/>
-<<<<<<< HEAD
-<div style="height: 300px"></div>
-<div class="topbar" id="dtop" style="background-color: #0a8ddf;height:80px;width: 100%">
-=======
-<br/>
-<br/>
-带logo头部导航
-<div class="topbar" id="dtop" style="background-color: #ff545a">
->>>>>>> 38f12f09b6ca797941d7c3069f45400bba960450
-  <div>
-    <div class="logo">
-      <img src="http://m.maiche.com/core-assets/mcw/application/news2/xincherili/files/04ffebabb499e1ee1820069fb1f2ab1e.png"/>
-    </div>
-    <div class="title inline-block">
-      频道名
-    </div>
-  </div>
-
-  <div>
-    <div class="menus-con inline-block">
-      <span class="menus">点我</span>
-      <div class="list" style=" ">
-        <div>asdas</div>
-      </div>
-      <div class="mask"></div>
-    </div>
-
-  </div>
-</div>
-
-<br/>
-<br/>
-<br/>
-带logo及返回按钮的头部导航
-<div class="topbar" style="background-color: #ff545a">
-  <div>
-    <div style="display: inline-block;vertical-align: top;">
-      <a class="weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
-        <i class="iconfont icon-xiangzuojiantou"></i>
-      </a>
-    </div>
-    <div class="logo">
-      <img src="http://m.maiche.com/core-assets/mcw/application/news2/xincherili/files/04ffebabb499e1ee1820069fb1f2ab1e.png"/>
-    </div>
-    <div class="title inline-block">
-      频道名
-    </div>
-  </div>
-  <div>
-    <div style="display: inline-block;vertical-align: top;">
-      频道名
-    </div>
-
-    <div class="menus-con" style="display: inline-block;vertical-align: top;">
-      <span class="menus">点我</span>
-      <div class="list" style=" ">
-        <div>asdas</div>
-      </div>
-      <div class="mask"></div>
-    </div>
-
-  </div>
-</div>
+<div class="sss" style="height: 30px;width:100%;display: none"></div>
+<div class="fix" style="width: 100%;height: 30px;background-color: #0a8ddf"></div>
+<div style="width: 100%;height: 80px;background-color: #ddd"></div>
+<div class="sss" style="height: 80px;width:100%;display: none"></div>
+<div id="dtop" style="width: 100%;height: 80px;background-color: #0D3349"></div>
+<div style="width: 100%;height: 80px;background-color: #ddd"></div>
 
 
-<br/>
-<br/>
-<br/>
-无logo 带返回上级及返回主页的头部导航
-<div class="topbar" style="background-color: #ff545a">
-  <div>
-    <div style="display: inline-block;vertical-align: top;">
-      <a class="weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
-        <i class="iconfont icon-shouye"></i>
-      </a>
-    </div>
-    <div style="display: inline-block;vertical-align: top;">
-      <a class="weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
-        <i class="iconfont icon-xiangzuojiantou"></i>
-      </a>
-    </div>
-    <div class="title inline-block">
-      频道名
-    </div>
-  </div>
-  <div>
-    <div class="menus-con" style="display: inline-block;vertical-align: top;">
-
-        <a class="menus weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
-          <i class="iconfont icon-gengduo"></i>
-        </a>
-
-      <div class="list" style=" ">
-        <div>asdas</div>
-      </div>
-      <div class="mask"></div>
-    </div>
-  </div>
-</div>
+<div class="b-box" style="width: 50px;height: 50px;background-color: #3d4145;position: fixed;display: none"></div>
 
 
-
-
-
-
-
-
-
-<br/>
 <div style="height: 1000px"></div>
 
-<br/>
+
 <script src="../lib/jquery-2.1.4.js"></script>
 <script src="../lib/fastclick.js"></script>
 <script>
@@ -161,12 +48,11 @@
 <script src="../js/jquery-weui.js"></script>
 
 <script>
-<<<<<<< HEAD
-  $(".fix").fixedtop(0);
-  $("#dtop").fixedtop(80,30); //第一个值为自身高度，第二个值为需要固定定位时与屏幕上方的设定距离
-=======
-  $("#dtop").fixedtop();
->>>>>>> 38f12f09b6ca797941d7c3069f45400bba960450
+  $(".fix").fixedtop(0);//必须放值，第一个值为触发后div与顶部距离
+  $("#dtop").fixedtop(30);
+  $(".b-box").fixedtop(300,500);//第二个值代表页面需滚动500px距离才会触发
+
+
 </script>
 </body>
 </html>
