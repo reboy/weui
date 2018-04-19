@@ -1,37 +1,29 @@
 .topbar {
   position: relative;
   width: 100%;
-  font-size: .8rem;
   height: 2.2rem;
   line-height: 2.2rem;
   color: #3d4145;
   background: #f0f0f0;
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
+  .flexbox();
+  font-size: 0px;
   -webkit-box-pack:justify;
   -webkit-justify-content:space-between;
   -ms-flex-pack:justify;
   justify-content:space-between;
-
+  overflow: hidden;
   .topbar-inner {
     height: 2.2rem;
     .flexbox();
     text-align: center;
   }
-
   .title {
-    width: 100%;
-    padding: 0;
     font-size: .8rem;
-    font-weight: normal;
-    line-height: 2.2rem;
     color: #3d4145;
     text-align: center;
     white-space: nowrap;
+    font-weight: bold;
   }
-
   .picker-button {
     box-sizing: border-box;
     height: 2.2rem;
@@ -39,17 +31,28 @@
     color: @color-primary;
     z-index: 1;
     padding: 0 .5rem;
+    font-size: .8rem;
   }
-
   .logo{
     box-sizing: border-box;
     display: inline-block;
     height: 2.2rem;
-    padding:0.5rem;
+    padding:0.5rem 0.3rem 0 0.4rem;
     img{
       display: block;
       height: 1.2rem;
     }
   }
-
+  .menus-con{
+    height: 2.2rem;
+    .menus{
+      background-color: @color-primary;
+      color: #FFF;
+      padding: 0 .4rem;
+      position: relative;
+      z-index:@zindex-popout;
+      display: block;
+      font-size: .8rem;
+    }
+  }
 }

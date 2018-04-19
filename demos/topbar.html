@@ -10,28 +10,54 @@
 <header class='demos-header'>
   <h1 class="demos-title">头部导航</h1>
 </header>
-<div class="fix" style="height: 30px; background-color: #0a8ddf;  width: 100%;">
 
-</div>
+普通头部导航
 <div class="topbar">
   <div class="picker-button">wewe</div>
   <div class="title">wewewe</div>
   <div class="picker-button">wewe</div>
 </div>
 <br/>
-<div style="height: 300px"></div>
-<div class="topbar" id="dtop" style="background-color: #0a8ddf">
+<br/>
+<br/>
+带logo头部导航
+<div class="topbar" id="dtop" style="background-color: #ff545a">
+  <div>
+    <div class="logo">
+      <img src="http://m.maiche.com/core-assets/mcw/application/news2/xincherili/files/04ffebabb499e1ee1820069fb1f2ab1e.png"/>
+    </div>
+    <div class="title inline-block">
+      频道名
+    </div>
+  </div>
+
+  <div>
+    <div class="menus-con inline-block">
+      <span class="menus">点我</span>
+      <div class="list" style=" ">
+        <div>asdas</div>
+      </div>
+      <div class="mask"></div>
+    </div>
+
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+带logo及返回按钮的头部导航
+<div class="topbar" style="background-color: #ff545a">
   <div>
     <div style="display: inline-block;vertical-align: top;">
-      <i class="iconfont icon-shouye"></i>
-    </div>
-    <div style="display: inline-block;vertical-align: top;">
-      <i class="iconfont icon-xiangzuojiantou"></i>
+      <a class="weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
+        <i class="iconfont icon-xiangzuojiantou"></i>
+      </a>
     </div>
     <div class="logo">
       <img src="http://m.maiche.com/core-assets/mcw/application/news2/xincherili/files/04ffebabb499e1ee1820069fb1f2ab1e.png"/>
     </div>
-    <div style="display: inline-block;vertical-align: top;">
+    <div class="title inline-block">
       频道名
     </div>
   </div>
@@ -41,23 +67,67 @@
     </div>
 
     <div class="menus-con" style="display: inline-block;vertical-align: top;">
-      <span class = "menus">点我</span>
+      <span class="menus">点我</span>
       <div class="list" style=" ">
         <div>asdas</div>
       </div>
       <div class="mask"></div>
-  </div>
+    </div>
 
   </div>
 </div>
+
+
+<br/>
+<br/>
+<br/>
+无logo 带返回上级及返回主页的头部导航
+<div class="topbar" style="background-color: #ff545a">
+  <div>
+    <div style="display: inline-block;vertical-align: top;">
+      <a class="weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
+        <i class="iconfont icon-shouye"></i>
+      </a>
+    </div>
+    <div style="display: inline-block;vertical-align: top;">
+      <a class="weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
+        <i class="iconfont icon-xiangzuojiantou"></i>
+      </a>
+    </div>
+    <div class="title inline-block">
+      频道名
+    </div>
+  </div>
+  <div>
+    <div class="menus-con" style="display: inline-block;vertical-align: top;">
+
+        <a class="menus weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
+          <i class="iconfont icon-gengduo"></i>
+        </a>
+
+      <div class="list" style=" ">
+        <div>asdas</div>
+      </div>
+      <div class="mask"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 <br/>
 <div style="height: 1000px"></div>
 
 <br/>
 <% include _foot.html %>
 <script>
-  $(".fix").fixedtop();
-  $("#dtop").fixedtop(30);
+  $("#dtop").fixedtop();
 </script>
 </body>
 </html>
