@@ -2050,8 +2050,8 @@ button.swiper-pagination-bullet {
   transition-duration: .3s;
   height: 100%;
   background: #EFEFF4;
-  -webkit-transform: translate3d(0, -720px, 0);
-          transform: translate3d(0, -720px, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
@@ -2079,8 +2079,8 @@ button.swiper-pagination-bullet {
 }
 .weui-popup__container--visible .weui-popup__modal {
   opacity: 1;
-  -webkit-transform: translate3d(0, -600px, 0);
-          transform: translate3d(0, -600px, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 .weui-notification {
   position: fixed;

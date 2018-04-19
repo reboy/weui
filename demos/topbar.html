@@ -10,7 +10,6 @@
 <header class='demos-header'>
   <h1 class="demos-title">头部导航</h1>
 </header>
-<div class="fix" style="height: 30px; background-color: #0a8ddf;  width: 100%; z-index: 999"></div>
 
 普通头部导航
 <div class="topbar">
@@ -78,12 +77,11 @@
   </div>
 </div>
 
-
 <br/>
 <br/>
 <br/>
 无logo 带返回上级及返回主页的头部导航
-<div class="topbar" style="background-color: #ff545a">
+<div class="topbar" id="ftop" style="background-color: #ff545a">
   <div>
     <div style="display: inline-block;vertical-align: top;">
       <a class="weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
@@ -108,22 +106,16 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
 <br/>
 <div style="height: 1000px"></div>
+
+
 
 <br/>
 <% include _foot.html %>
 <script>
-  $(".fix").fixedtop();
-  $("#dtop").fixedtop(30);
+  $("#dtop").fixedtop();
+
 </script>
 </body>
 </html>
