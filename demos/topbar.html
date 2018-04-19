@@ -10,6 +10,7 @@
 <header class='demos-header'>
   <h1 class="demos-title">头部导航</h1>
 </header>
+<div class="fix" style="height: 30px; background-color: #0a8ddf;  width: 100%; z-index: 999"></div>
 
 普通头部导航
 <div class="topbar">
@@ -94,17 +95,11 @@
         <i class="iconfont icon-xiangzuojiantou"></i>
       </a>
     </div>
-    <div class="title inline-block">
-      频道名
-    </div>
+
   </div>
   <div>
     <div class="menus-con" style="display: inline-block;vertical-align: top;">
-
-        <a class="menus weui-link-btn weui-link-btn-normal weui-link-btn-primary" href="#">
-          <i class="iconfont icon-gengduo"></i>
-        </a>
-
+      <span class="menus">点我</span>
       <div class="list" style=" ">
         <div>asdas</div>
       </div>
@@ -127,7 +122,8 @@
 <br/>
 <% include _foot.html %>
 <script>
-  $("#dtop").fixedtop();
+  $(".fix").fixedtop();
+  $("#dtop").fixedtop(30);
 </script>
 </body>
 </html>
