@@ -13,12 +13,20 @@
           $this.css("display","none");
         }
       }else {
+        var thisH = $this.height();
         if ((p) >= (startPos - npx)) {
           $this.css("position", "fixed");
-          $this.prev().css("display", "block");
+          // $this.prev().css("display", "block");
+          if($this.prev().hasClass("fill")){
+
+          }else {
+            $this.before("<div class='fill' style='height: "+thisH+"px;'></div>")
+          }
         } else {
           $this.css("position", "static");
-          $this.prev().css("display", "none");
+          if($this.prev().hasClass("fill")){
+            $this.prev().remove();
+          }
         }
         $this.css("top", (p) >= (startPos - npx) ? npx + "px" : "");
       }
