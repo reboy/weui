@@ -102,7 +102,14 @@ gulp.task('cssmin', ["less"], function () {
     .pipe(header(banner))
     .pipe(ext_replace('.min.css'))
     .pipe(gulp.dest('./dist/css/'));
+
+  gulp.src(['./src/lib/*.css', '!./src/lib/*.min.css'])
+      .pipe(cssmin())
+      .pipe(header(banner))
+      .pipe(ext_replace('.min.css'))
+      .pipe(gulp.dest('./src/lib/'));
 });
+
 
 gulp.task('ejs', function () {
   return gulp.src(["./demos/*.html", "!./demos/_*.html"])
